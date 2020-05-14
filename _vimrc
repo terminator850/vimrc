@@ -7,7 +7,10 @@ set wrap              " 自动折行
 set showcmd           " 显示当前命令
 set wildmenu          " 显示补全列表
 set expandtab         " 拆分制表符 
-set tabstop=2         " 制表符长度
+set tabstop=4         " 制表符宽度
+set shiftwidth=4      " 缩进空格数
+set hlsearch          " 高亮显示搜索结果
+set foldmethod=manual " 手动折叠
 
 syntax on
 
@@ -38,7 +41,6 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'preservim/nerdtree'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'taglist.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
