@@ -10,12 +10,12 @@ set expandtab         " 拆分制表符
 set tabstop=4         " 制表符宽度
 set shiftwidth=4      " 缩进空格数
 set hlsearch          " 高亮显示搜索结果
-set foldmethod=manual " 手动折叠
+set foldmethod=manual " 手动折叠 可视模式选中+zf 或zf+光标移动折叠 zo 打开折叠
 
-syntax on
+syntax on             " 高亮
 
 " 窗口
-map <up> :resize +5<CR>
+map <up> :resize +5<CR> 
 map <down> :resize -5<CR>
 map <left> :vertical resize-5<CR>
 map <right> :vertical resize+5<CR>
