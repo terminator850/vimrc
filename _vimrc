@@ -11,6 +11,8 @@ set tabstop=4         " 制表符宽度
 set shiftwidth=4      " 缩进空格数
 set hlsearch          " 高亮显示搜索结果
 set foldmethod=manual " 手动折叠 可视模式选中+zf 或zf+光标移动折叠 zo 打开折叠
+set tags=tags
+set autochdir
 
 syntax on             " 高亮
 
@@ -28,6 +30,12 @@ map <S-Tab> :tabprevious<CR>
 
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
+
+" taglist
+map <C-t> :TlistToggle
+let Tlist_Exit_OnlyWindow = 1
+let Tlist_Use_Right_Window = 1
+let Tlist_Show_One_File = 1
 
 " Vundle
 set nocompatible              " be iMproved, required
