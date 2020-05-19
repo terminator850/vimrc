@@ -32,7 +32,7 @@ map <S-Tab> :tabprevious<CR>
 map <C-n> :NERDTreeToggle<CR>
 
 " taglist
-map <C-t> :TlistToggle
+map <C-t> :TlistToggle<CR>
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Use_Right_Window = 1
 let Tlist_Show_One_File = 1
