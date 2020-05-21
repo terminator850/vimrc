@@ -36,6 +36,10 @@ map <C-t> :TlistToggle<CR>
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Show_One_File = 1
 
+" bufexplorer
+let bufExplorerSplitRight=1
+let bufExplorerSplitHorzSize=10
+
 " Vundle
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -49,6 +53,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'preservim/nerdtree'
 Plugin 'taglist.vim'
+Plugin 'jlanzarotta/bufexplorer'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
