@@ -20,19 +20,19 @@ map <up> :resize +5<CR>
 map <down> :resize -5<CR>
 map <left> :vertical resize-5<CR>
 map <right> :vertical resize+5<CR>
-map <leader><right> <C-w>r
-map <leader><left> <C-w>R
+map <leader>l <C-w>r
+map <leader>h <C-w>R
 
 " 标签页
 map <Tab> :tabnext<CR>
 map <S-Tab> :tabprevious<CR>
 
 " NERDTree
-map <C-n> :NERDTreeToggle<CR>
+map <leader>n :NERDTreeToggle<CR>
 let NERDTreeWinPos='right'
 
 " taglist
-map <C-t> :TlistToggle<CR>
+map <leader>t :TlistToggle<CR>
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Show_One_File = 1
 
