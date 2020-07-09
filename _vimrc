@@ -38,7 +38,6 @@ let Tlist_Exit_OnlyWindow = 1
 let Tlist_Show_One_File = 1
 
 " bufexplorer
-let bufExplorerSplitRight=1
 let bufExplorerSplitHorzSize=10
 
 " Vundle
