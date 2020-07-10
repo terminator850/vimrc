@@ -38,8 +38,13 @@ let Tlist_Exit_OnlyWindow = 1
 let Tlist_Show_One_File = 1
 
 " bufexplorer
-let bufExplorerSplitRight=1
 let bufExplorerSplitHorzSize=10
+let bufExplorerSplitBelow=1
+
+" vimgrep
+noremap <leader>f :vimgrep 
+map <leader>co :copen<CR>
+map <leader>ccl :cclose<CR>
 
 " Vundle
 set nocompatible              " be iMproved, required
