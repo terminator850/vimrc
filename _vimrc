@@ -1,4 +1,5 @@
 let mapleader=" "
+noremap <F2> :source ~/.vimrc<CR>
 
 set nu                " 显示行号
 set relativenumber    " 显示相对行号
@@ -29,20 +30,28 @@ noremap <Tab> :tabnext<CR>
 noremap <S-Tab> :tabprevious<CR>
 
 " NERDTree
-noremap <leader>wn :NERDTreeToggle<CR>
+noremap <F10> :NERDTreeToggle<CR>
 let NERDTreeWinPos='right'
 
+" bufexplorer
+let bufExplorerSplitHorzSize=10
+let bufExplorerSplitBelow=1
+
 " taglist
-noremap <leader>wt :TlistToggle<CR>
+noremap <F9> :TlistToggle<CR>
 noremap <leader>s :tselect<CR>
 noremap <leader>n :tnext<CR>
 noremap <leader>p :tprevious<CR>
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Show_One_File = 1
 
-" bufexplorer
-let bufExplorerSplitHorzSize=10
-let bufExplorerSplitBelow=1
+" tagbar
+noremap <F8> :TagbarToggle<CR>
+let tagbar_left = 1
+let tagbar_autoshowtag = 1
+let tagbar_autofocus = 1
+let tagbar_width = 30
+let tagbar_previewwin_pos = "botright"
 
 " vimgrep
 noremap <leader>f :vimgrep 
@@ -63,6 +72,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'preservim/nerdtree'
 Plugin 'taglist.vim'
 Plugin 'jlanzarotta/bufexplorer'
+Plugin 'tagbar'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
