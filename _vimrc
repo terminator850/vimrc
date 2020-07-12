@@ -17,23 +17,26 @@ set autochdir
 syntax on             " 高亮
 
 " 窗口
-map <up> :resize +5<CR>
-map <down> :resize -5<CR>
-map <left> :vertical resize-5<CR>
-map <right> :vertical resize+5<CR>
-map <leader>l <C-w>r
-map <leader>h <C-w>R
+noremap <up> :resize +5<CR>
+noremap <down> :resize -5<CR>
+noremap <left> :vertical resize-5<CR>
+noremap <right> :vertical resize+5<CR>
+noremap <leader>l <C-w>r
+noremap <leader>h <C-w>R
 
 " 标签页
-map <Tab> :tabnext<CR>
-map <S-Tab> :tabprevious<CR>
+noremap <Tab> :tabnext<CR>
+noremap <S-Tab> :tabprevious<CR>
 
 " NERDTree
-map <leader>n :NERDTreeToggle<CR>
+noremap <leader>wn :NERDTreeToggle<CR>
 let NERDTreeWinPos='right'
 
 " taglist
-map <leader>t :TlistToggle<CR>
+noremap <leader>wt :TlistToggle<CR>
+noremap <leader>s :tselect<CR>
+noremap <leader>n :tnext<CR>
+noremap <leader>p :tprevious<CR>
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Show_One_File = 1
 
@@ -43,8 +46,8 @@ let bufExplorerSplitBelow=1
 
 " vimgrep
 noremap <leader>f :vimgrep 
-map <leader>co :copen<CR>
-map <leader>ccl :cclose<CR>
+noremap <leader>co :copen<CR>
+noremap <leader>ccl :cclosen<CR>
 
 " Vundle
 set nocompatible              " be iMproved, required
