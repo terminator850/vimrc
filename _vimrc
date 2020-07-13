@@ -14,8 +14,15 @@ set hlsearch          " 高亮显示搜索结果
 set foldmethod=manual " 手动折叠 可视模式选中+zf 或zf+光标移动折叠 zo 打开折叠
 set tags=tags;
 set autochdir
-
 syntax on             " 高亮
+
+" 自动补全
+inoremap ( ()<ESC>i
+inoremap [ []<ESC>i
+inoremap { {}<ESC>i
+inoremap < <><ESC>i
+inoremap ' ''<ESC>i
+inoremap " ""<ESC>i
 
 " 窗口
 noremap <up> :resize +5<CR>

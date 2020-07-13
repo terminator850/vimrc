@@ -18,7 +18,11 @@
 |窗口高度|resize (+/-5)|↑/↓|
 |窗口宽度|vertical (+/-5)|→/←|
 
-### buffexplore
+## 跳转
+
+## 标记
+
+## buffexplore
 ||命令|快捷键|
 |:--:|:--:|:--:|
 |当前窗口打开缓存浏览|BufExplorer|<Leader>be|                                             
