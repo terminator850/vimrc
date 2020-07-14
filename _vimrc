@@ -16,14 +16,6 @@ set tags=tags;
 set autochdir
 syntax on             " 高亮
 
-" 自动补全
-inoremap ( ()<ESC>i
-inoremap [ []<ESC>i
-inoremap { {}<ESC>i
-inoremap < <><ESC>i
-inoremap ' ''<ESC>i
-inoremap " ""<ESC>i
-
 " 窗口
 noremap <up> :resize +5<CR>
 noremap <down> :resize -5<CR>
@@ -41,16 +33,11 @@ noremap <F10> :NERDTreeToggle<CR>
 let NERDTreeWinPos='right'
 
 " bufexplorer
+noremap <F9> :ToggleBufExplorer<CR>
 let bufExplorerSplitHorzSize=10
 let bufExplorerSplitBelow=1
 
-" taglist
-noremap <F9> :TlistToggle<CR>
-noremap <leader>s :tselect<CR>
-noremap <leader>n :tnext<CR>
-noremap <leader>p :tprevious<CR>
-let Tlist_Exit_OnlyWindow = 1
-let Tlist_Show_One_File = 1
+noremap <leader>b :buffers<CR>
 
 " tagbar
 noremap <F8> :TagbarToggle<CR>
@@ -59,6 +46,10 @@ let tagbar_autoshowtag = 1
 let tagbar_autofocus = 1
 let tagbar_width = 30
 let tagbar_previewwin_pos = "botright"
+
+noremap <leader>s :tselect<CR>
+noremap <leader>n :tnext<CR>
+noremap <leader>p :tprevious<CR>
 
 " vimgrep
 noremap <leader>f :vimgrep 
@@ -77,7 +68,6 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'preservim/nerdtree'
-Plugin 'taglist.vim'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'tagbar'
 " All of your Plugins must be added before the following line
