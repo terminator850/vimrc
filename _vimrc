@@ -14,6 +14,7 @@ set hlsearch          " 高亮显示搜索结果
 set foldmethod=manual " 手动折叠 可视模式选中+zf 或zf+光标移动折叠 zo 打开折叠
 set tags=tags;
 set autochdir
+set path+=**
 syntax on             " 高亮
 
 " 窗口
@@ -70,6 +71,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'preservim/nerdtree'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'tagbar'
+Plugin 'ctrlp.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
