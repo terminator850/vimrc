@@ -12,10 +12,21 @@ set tabstop=4         " 制表符宽度
 set shiftwidth=4      " 缩进空格数
 set hlsearch          " 高亮显示搜索结果
 set foldmethod=manual " 手动折叠 可视模式选中+zf 或zf+光标移动折叠 zo 打开折叠
-set tags=tags;
-set autochdir
-set path+=**
+set path+=**          " 设置find搜索路径
 syntax on             " 高亮
+
+" ctags
+noremap <leader>s :tselect<CR>
+noremap <leader>n :tnext<CR>
+noremap <leader>p :tprevious<CR>
+
+" vimgrep
+noremap <leader>f :vimgrep 
+noremap <leader>co :copen<CR>
+noremap <leader>ccl :cclosen<CR>
+
+" buffers
+noremap <leader>b :buffers<CR>
 
 " 窗口
 noremap <up> :resize +5<CR>
@@ -30,15 +41,8 @@ noremap <Tab> :tabnext<CR>
 noremap <S-Tab> :tabprevious<CR>
 
 " NERDTree
-noremap <F10> :NERDTreeToggle<CR>
+noremap <F9> :NERDTreeToggle<CR>
 let NERDTreeWinPos='right'
-
-" bufexplorer
-noremap <F9> :ToggleBufExplorer<CR>
-let bufExplorerSplitHorzSize=10
-let bufExplorerSplitBelow=1
-
-noremap <leader>b :buffers<CR>
 
 " tagbar
 noremap <F8> :TagbarToggle<CR>
@@ -47,15 +51,6 @@ let tagbar_autoshowtag = 1
 let tagbar_autofocus = 1
 let tagbar_width = 30
 let tagbar_previewwin_pos = "botright"
-
-noremap <leader>s :tselect<CR>
-noremap <leader>n :tnext<CR>
-noremap <leader>p :tprevious<CR>
-
-" vimgrep
-noremap <leader>f :vimgrep 
-noremap <leader>co :copen<CR>
-noremap <leader>ccl :cclosen<CR>
 
 " Vundle
 set nocompatible              " be iMproved, required
@@ -69,9 +64,9 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'preservim/nerdtree'
-Plugin 'jlanzarotta/bufexplorer'
 Plugin 'tagbar'
 Plugin 'ctrlp.vim'
+Plugin 'fatih/vim-go'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
