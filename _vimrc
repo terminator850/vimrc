@@ -52,6 +52,12 @@ let tagbar_autofocus = 1
 let tagbar_width = 30
 let tagbar_previewwin_pos = "botright"
 
+" vim-go
+let g:go_fmt_command = "goimports"
+
+" youcompleteme
+let g:ycm_gopls_binary_path = "/home/wangyu/workspace/gowork/bin/"
+
 " Vundle
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -67,6 +73,7 @@ Plugin 'preservim/nerdtree'
 Plugin 'tagbar'
 Plugin 'ctrlp.vim'
 Plugin 'fatih/vim-go'
+Plugin 'ycm-core/YouCompleteMe'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
