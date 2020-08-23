@@ -52,6 +52,10 @@ let tagbar_autofocus = 1
 let tagbar_width = 30
 let tagbar_previewwin_pos = "botright"
 
+" poerline
+let g:powerline_pycmd="py3"
+set laststatus=2
+
 " vim-go
 let g:go_fmt_command = "goimports"
 
