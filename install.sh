@@ -19,6 +19,7 @@ echo "====golang ok===="
 echo "====install tools===="
 # sudo pacman -S vscode
 # sudo pacman -S make cmake
+# sudo pacman -S nodejs npm
 echo "====tools ok===="
 echo "====install the other===="
 # sudo pacman -S powerline powerline-vim

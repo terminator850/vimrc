@@ -62,6 +62,16 @@ let g:go_fmt_command = "goimports"
 " youcompleteme
 let g:ycm_gopls_binary_path = "/home/wangyu/workspace/gowork/bin/"
 
+" vimrainbow
+let g:rainbow_active = 1
+let g:rainbow_load_separately = [
+    \ [ '*' , [['(', ')'], ['\[', '\]'], ['{', '}']] ],
+    \ [ '*.cpp' , [['(', ')'], ['\[', '\]'], ['{', '}']] ],
+    \ [ '*.js' , [['(', ')'], ['\[', '\]'], ['{', '}']] ],
+    \ [ '*.{html,htm}' , [['(', ')'], ['\[', '\]'], ['{', '}'], ['<\a[^>]*>', '</[^>]*>']] ],
+    \ ]
+let g:rainbow_ctermfgs = ['lightblue', 'lightgreen', 'yellow', 'red', 'magenta']
+
 " Vundle
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -78,6 +88,8 @@ Plugin 'tagbar'
 Plugin 'ctrlp.vim'
 Plugin 'fatih/vim-go'
 Plugin 'ycm-core/YouCompleteMe'
+Plugin 'frazrepo/vim-rainbow'
+Plugin 'Yggdroot/indentLine'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
