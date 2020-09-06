@@ -1,4 +1,4 @@
-mkdir ($HOME)/workspace
+kdir ($HOME)/workspace
 echo "====install git===="
 sudo pacman -S git
 echo "====git ok===="
@@ -27,3 +27,10 @@ echo "====install the other===="
 # sudo pacman -S freemind
 # sudo pacman -S cozy-desktop
 echo "====the other ok===="
+
+echo "====install fcitx todo===="
+# sudo pacman -S fctix fctix-tools
+# export GTK_IM_MODULE=fcitx
+# export QT_IM_MODULE=fcitx
+# export XMODIFIERS="@im=fcitx"
+echo "====the fcitx ok===="
