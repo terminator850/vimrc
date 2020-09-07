@@ -26,6 +26,7 @@ echo "====install the other===="
 # sudo pacman -S qtorrent
 # sudo pacman -S freemind
 # sudo pacman -S cozy-desktop
+# sudo pacman -S Atril
 echo "====the other ok===="
 
 echo "====install fcitx todo===="
